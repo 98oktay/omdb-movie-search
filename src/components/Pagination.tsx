@@ -24,7 +24,7 @@ const Pagination: React.FC<PaginationProps> = ({
       <button
         onClick={() => onPageChange(currentPage - 1)}
         disabled={currentPage === 1}
-        className="p-2 rounded-lg border enabled:hover:bg-gray-100 disabled:opacity-50"
+        className="p-2 rounded-lg border enabled:hover:bg-gray-700 disabled:opacity-50"
       >
         <ChevronLeft className="w-5 h-5" />
       </button>
@@ -33,7 +33,7 @@ const Pagination: React.FC<PaginationProps> = ({
         <>
           <button
             onClick={() => onPageChange(1)}
-            className="px-4 py-2 rounded-lg border hover:bg-gray-100"
+            className="px-4 py-2 rounded-lg border hover:bg-gray-700"
           >
             1
           </button>
@@ -47,8 +47,8 @@ const Pagination: React.FC<PaginationProps> = ({
           onClick={() => onPageChange(page)}
           className={`px-4 py-2 rounded-lg border ${
             currentPage === page
-              ? "bg-blue-600 text-white"
-              : "hover:bg-gray-100"
+              ? "bg-yellow-500 text-white"
+              : "hover:bg-gray-700"
           }`}
         >
           {page}
@@ -60,7 +60,7 @@ const Pagination: React.FC<PaginationProps> = ({
           <span className="px-2">...</span>
           <button
             onClick={() => onPageChange(totalPages)}
-            className="px-4 py-2 rounded-lg border hover:bg-gray-100"
+            className="px-4 py-2 rounded-lg border hover:bg-gray-700"
           >
             {totalPages}
           </button>
@@ -70,7 +70,7 @@ const Pagination: React.FC<PaginationProps> = ({
       <button
         onClick={() => onPageChange(currentPage + 1)}
         disabled={currentPage === totalPages}
-        className="p-2 rounded-lg border enabled:hover:bg-gray-100 disabled:opacity-50"
+        className="p-2 rounded-lg border enabled:hover:bg-gray-700 disabled:opacity-50"
       >
         <ChevronRight className="w-5 h-5" />
       </button>

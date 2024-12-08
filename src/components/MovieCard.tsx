@@ -10,7 +10,7 @@ interface MovieCardProps {
 const MovieCard: React.FC<MovieCardProps> = ({ movie }) => {
   return (
     <Link href={`/movie/${movie.imdbID}`} className="group">
-      <div className="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-200 hover:scale-105">
+      <div className="flex flex-col bg-white/10 backdrop-blur-sm h-full rounded-xl shadow-md overflow-hidden transition-transform duration-200 hover:scale-105">
         <div className="relative aspect-[2/3] overflow-hidden">
           <img
             src={
@@ -22,11 +22,11 @@ const MovieCard: React.FC<MovieCardProps> = ({ movie }) => {
             className="w-full h-full object-cover"
           />
         </div>
-        <div className="p-4">
-          <h3 className="text-lg font-semibold text-gray-800 group-hover:text-blue-600 line-clamp-2">
+        <div className="flex flex-1 flex-col p-4">
+          <h3 className="text-lg font-semibold text-slate-200 group-hover:text-white line-clamp-2 flex-1">
             {movie.Title}
           </h3>
-          <div className="mt-2 flex items-center text-sm text-gray-600 space-x-4">
+          <div className="mt-2 flex items-center text-sm text-slate-200 space-x-4">
             <div className="flex items-center">
               <Calendar className="w-4 h-4 mr-1" />
               <span>{movie.Year}</span>

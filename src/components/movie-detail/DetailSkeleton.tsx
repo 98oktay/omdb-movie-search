@@ -2,7 +2,7 @@ import BackButton from "./BackButton";
 
 export default function DetailSkeleton() {
   return (
-    <div className="min-h-screen bg-gray-100">
+    <div className="min-h-screen ">
       <div className="movie-detail-container">
         <BackButton />
         <div className="movie-detail-card">

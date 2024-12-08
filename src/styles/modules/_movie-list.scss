@@ -12,11 +12,11 @@
 }
 
 .movie-list-loading-icon {
-  @apply w-8 h-8 animate-spin text-blue-600;
+  @apply w-8 h-8 animate-spin text-yellow-400;
 }
 
 .movie-list-grid {
-  @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 mt-8;
+  @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 mt-8 md:mt-20;
 }
 
 .movie-list-pagination-container {
@@ -24,5 +24,5 @@
 }
 
 .movie-list-no-results {
-  @apply text-center text-gray-600 mt-8;
+  @apply text-center text-gray-400 mt-8;
 }
