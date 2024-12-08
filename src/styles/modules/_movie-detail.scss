@@ -1,0 +1,55 @@
+.movie-detail-container {
+  @apply container mx-auto px-4 py-8;
+}
+
+.movie-detail-link {
+  @apply inline-flex items-center text-blue-600 hover:text-blue-800 mb-6;
+}
+
+.movie-detail-card {
+  @apply bg-white rounded-lg shadow-lg overflow-hidden;
+}
+
+.movie-detail-flex-layout {
+  @apply md:flex;
+}
+
+.movie-detail-poster {
+  @apply w-full h-full object-cover;
+}
+
+.movie-detail-details-section {
+  @apply md:w-2/3 p-6 md:p-8;
+}
+
+.movie-detail-title {
+  @apply text-3xl font-bold text-gray-900 mb-2;
+}
+
+.movie-detail-icon {
+  @apply flex items-center text-gray-600;
+}
+
+.movie-detail-icon-text-yellow {
+  @apply text-yellow-500;
+}
+
+.movie-detail-text-content {
+  @apply text-gray-700 mb-6 leading-relaxed;
+}
+
+.movie-detail-section-header {
+  @apply font-semibold text-gray-900;
+}
+
+.movie-detail-section-subtext {
+  @apply text-gray-700;
+}
+
+.movie-detail-animate-pulse-box {
+  @apply bg-gray-200 animate-pulse;
+}
+
+.movie-detail-section-icon {
+  @apply w-5 h-5 mr-3 text-gray-500 mt-1;
+}

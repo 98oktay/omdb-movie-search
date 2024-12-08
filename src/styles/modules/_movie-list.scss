@@ -1,0 +1,28 @@
+/* modules.scss */
+.movie-list-container {
+  @apply container mx-auto px-4 py-8;
+}
+
+.movie-list-error-message {
+  @apply text-center text-red-600 mt-8;
+}
+
+.movie-list-loading {
+  @apply flex justify-center items-center min-h-[400px];
+}
+
+.movie-list-loading-icon {
+  @apply w-8 h-8 animate-spin text-blue-600;
+}
+
+.movie-list-grid {
+  @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 mt-8;
+}
+
+.movie-list-pagination-container {
+  @apply mt-8;
+}
+
+.movie-list-no-results {
+  @apply text-center text-gray-600 mt-8;
+}
